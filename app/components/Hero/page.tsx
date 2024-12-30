@@ -17,8 +17,8 @@ export default function Hero() {
             <Image
               src="/images/pic.jpeg"
               alt="John Doe"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               className="rounded-full border-4 border-white/10 shadow-lg backdrop-blur-sm transform transition duration-500 
               group-hover:scale-105 hover-glow"
               priority

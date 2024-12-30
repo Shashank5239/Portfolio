@@ -4,6 +4,7 @@ import { Trophy, Award, Star, ArrowRight, Calendar, Medal, Target } from 'lucide
 import { motion } from 'framer-motion'
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import AchievementsLayout from './layout'
 
 export default function Achievements() {
   const achievements = [
@@ -67,7 +68,8 @@ export default function Achievements() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-28">
+    <AchievementsLayout>
+    <div className="container mx-auto px-4">
       <motion.div
         variants={container}
         initial="hidden"
@@ -177,6 +179,7 @@ export default function Achievements() {
         </motion.div>
       </motion.div>
     </div>
+    </AchievementsLayout>
   )
 }
 

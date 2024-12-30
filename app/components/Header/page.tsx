@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { Menu, X, User, Code, Briefcase, Award, Mail, Book, Layers, Users } from 'lucide-react'
 import HeaderLayout from './layout'
@@ -14,18 +14,30 @@ import {
 export default function Header() {
   const [isFloating, setIsFloating] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
       setIsFloating(window.scrollY > 50)
     }
 
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        toggleMenu(true)
+      }
+    }
+
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    document.addEventListener('mousedown', handleClickOutside)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
   }, [])
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
+  const toggleMenu = (forceClose = false) => {
+    setIsMenuOpen(prev => forceClose ? false : !prev)
   }
 
   const navItems = [
@@ -40,7 +52,7 @@ export default function Header() {
 
   return (
     <HeaderLayout>
-      <nav className={'container mx-auto px-6 py-4 nav-blur rounded-3xl'}>
+      <nav className={`container mx-auto px-6 py-4 nav-blur rounded-3xl ${isFloating ? 'shadow-lg' : ''}`}>
         <div className="flex items-center justify-between">
           <Link href="/" className="text-white text-xl font-bold">
             John Doe
@@ -73,7 +85,7 @@ export default function Header() {
           </Link>
 
           <button 
-            onClick={toggleMenu} 
+            onClick={() => toggleMenu()}
             className="md:hidden text-white focus:outline-none"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -82,14 +94,23 @@ export default function Header() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 nav-blur p-8 shadow-lg">
+          <div ref={menuRef} className="md:hidden absolute top-16 left-0 right-0 nav-blur p-8 shadow-lg">
             <div className="flex flex-col space-y-8 items-center">
               {navItems.map((item, index) => (
-                <Link key={index} href={item.href} className="nav-item text-white hover:text-sky-400 transition-colors flex items-center">
+                <Link 
+                  key={index} 
+                  href={item.href} 
+                  className="nav-item text-white hover:text-sky-400 transition-colors flex items-center"
+                  onClick={() => toggleMenu(true)}
+                >
                   <item.icon size={20} className="mr-2" /> {item.label}
                 </Link>
               ))}
-              <Link href="#contact" className="nav-item text-white hover:text-sky-400 transition-colors flex items-center">
+              <Link 
+                href="#contact" 
+                className="nav-item text-white hover:text-sky-400 transition-colors flex items-center"
+                onClick={() => toggleMenu(true)}
+              >
                 <Mail size={20} className="mr-2" /> Contact
               </Link>
             </div>
