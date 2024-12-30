@@ -15,7 +15,7 @@ export default function Hero() {
           transition duration-1000 group-hover:duration-200 animate-tilt"></div>
           <div className="relative">
             <Image
-              src="/images/pic.jpeg"
+              src="/placeholder.svg"
               alt="John Doe"
               width={200}
               height={200}
