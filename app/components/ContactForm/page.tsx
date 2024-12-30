@@ -164,7 +164,7 @@ export default function ContactForm() {
                     <Button 
                       type="submit" 
                       disabled={status.loading}
-                      className="w-full bg-gradient-to-r from-sky-900 to-purple-900 text-white py-3 px-6 rounded-md transition 
+                      className="w-full bg-gradient-to-r from-sky-900 text-white py-3 px-6 rounded-md transition 
                       duration-300 flex items-center justify-center text-lg font-sans shadow-lg"
                     >
                       {status.loading ? 'Sending...' : 'Send Message'}

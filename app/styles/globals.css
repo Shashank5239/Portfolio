@@ -112,3 +112,11 @@ body {
   animation: tilt 10s infinite linear;
 }
 
+::selection {
+  background: none;
+  color: inherit;
+}
+
+body {
+  user-select: none;
+}
