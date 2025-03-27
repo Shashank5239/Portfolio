@@ -40,7 +40,7 @@ export default function Footer() {
               {/* <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transform transition duration-300 hover:scale-110">
                 <Twitter size={28} />
               </a> */}
-              <a href="https://www.instagram.com/mr.shashank_singh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transform transition duration-300 hover:scale-110">
+              <a href="https://www.instagram.com/mr._shashank_singh_/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transform transition duration-300 hover:scale-110">
                 <Instagram size={28} />
               </a>
             </div>
