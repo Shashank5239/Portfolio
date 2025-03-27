@@ -34,7 +34,7 @@ export default function ContactForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: 'yaha par likh accesss code gadhe', // Replace with your Web3Forms access key
+          access_key: '6f0f0372-dd7b-40d2-9f95-1bcd8e1ca2de', // Replace with your Web3Forms access key
           ...formData,
         }),
       });
@@ -80,22 +80,22 @@ export default function ContactForm() {
             <div className="space-y-4">
               <div className="flex items-center hover:text-sky-400">
                 <Mail className="w-6 h-6 mr-4 text-white" />
-                <span>john.doe@example.com</span>
+                <span>shashankkumar2232@gmail.com</span>
               </div>
               <div className="flex items-center hover:text-sky-400">
                 <Phone className="w-6 h-6 mr-4 text-white" />
-                <span>+1 (123) 456-7890</span>
+                <span>+919693444480</span>
               </div>
               <div className="flex items-center hover:text-sky-400">
                 <MapPin className="w-6 h-6 mr-4 text-white" />
-                <span>San Francisco, CA</span>
+                <span>Punjab, India</span>
               </div>
             </div>
             <div className="mt-8 flex space-x-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-sky-400 transition-colors">
+              <a href="https://www.linkedin.com/in/shashank-kumar2232/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-sky-400 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-sky-400 transition-colors">
+              <a href="https://github.com/Shashank5239/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-sky-400 transition-colors">
                 <Github size={24} />
               </a>
             </div>

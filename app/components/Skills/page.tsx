@@ -9,86 +9,30 @@ export default function Skills() {
     {
       icon: <Users className="w-8 h-8 text-sky-400" />,
       title: "Leadership",
-      skills: [
-        "Event Management Head",
-        "Team Leadership",
-        "Project Coordination",
-        "Budget Management",
-        "Stakeholder Communication"
-      ]
+      skills: ["Team Leadership", "Project Coordination"]
     },
     {
       icon: <Brain className="w-8 h-8 text-sky-400" />,
       title: "Soft Skills",
-      skills: [
-        "Problem Solving",
-        "Critical Thinking",
-        "Adaptability",
-        "Emotional Intelligence",
-        "Decision Making"
-      ]
-    },
-    {
-      icon: <Presentation className="w-8 h-8 text-sky-400" />,
-      title: "Event Management",
-      skills: [
-        "Event Planning",
-        "Vendor Management",
-        "Resource Allocation",
-        "Risk Management",
-        "Event Marketing"
-      ]
+      skills: ["Problem Solving", "Critical Thinking", "Adaptability"]
     },
     {
       icon: <MessageSquare className="w-8 h-8 text-sky-400" />,
       title: "Communication",
-      skills: [
-        "Public Speaking",
-        "Team Collaboration",
-        "Conflict Resolution",
-        "Negotiation",
-        "Written Communication"
-      ]
-    },
-    {
-      icon: <Target className="w-8 h-8 text-sky-400" />,
-      title: "Management",
-      skills: [
-        "Strategic Planning",
-        "Team Building",
-        "Time Management",
-        "Goal Setting",
-        "Performance Evaluation"
-      ]
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-sky-400" />,
-      title: "Organization",
-      skills: [
-        "Multi-tasking",
-        "Priority Management",
-        "Schedule Coordination",
-        "Documentation",
-        "Process Improvement"
-      ]
+      skills: ["Public Speaking", "Team Collaboration"]
     },
     {
       icon: <Code className="w-8 h-8 text-sky-400" />,
       title: "Programming",
-      skills: ["Python", "JavaScript", "TypeScript", "Java", "C++"]
+      skills: ["JavaScript","PHP", "C++"]
     },
     {
       icon: <Layout className="w-8 h-8 text-sky-400" />,
       title: "Frontend",
-      skills: ["React", "Next.js", "Tailwind CSS", "Three.js"]
-    },
-    {
-      icon: <Database className="w-8 h-8 text-sky-400" />,
-      title: "Backend",
-      skills: ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+      skills: ["React", "HTML & CSS", "PHP"]
     }
-  ]
-
+  ];
+  
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -113,7 +57,7 @@ export default function Skills() {
           variants={container}
           className="space-y-12"
         >
-          <motion.div variants={item} className="text-center space-y-4">
+          <motion.div variants={item} className="text-center space-y-2">
             <h2 className="text-4xl font-bold text-white">Skills & Expertise</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Combining strong leadership and event management experience with technical proficiency
@@ -121,9 +65,9 @@ export default function Skills() {
           </motion.div>
 
           <motion.div variants={item}>
-            <h3 className="text-2xl font-semibold text-white mb-8 text-center">Leadership & Soft Skills</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4 text-center">Leadership & Soft Skills</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {skillCategories.slice(0, 6).map((category, index) => (
+              {skillCategories.slice(0, 3).map((category, index) => (
                 <motion.div
                   key={index}
                   variants={item}
@@ -158,9 +102,9 @@ export default function Skills() {
           </motion.div>
 
           <motion.div variants={item}>
-            <h3 className="text-2xl font-semibold text-white mb-8 text-center">Technical Skills</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {skillCategories.slice(6).map((category, index) => (
+            <h3 className="text-2xl font-semibold text-white mb-4 text-center">Technical Skills</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {skillCategories.slice(3).map((category, index) => (
                 <motion.div
                   key={index}
                   variants={item}
@@ -168,7 +112,7 @@ export default function Skills() {
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <Card className="glass-effect hover-glow h-full bg-gradient-to-br from-sky-500/10 to-blue-500/10 border-sky-500/20">
-                    <CardContent className="p-6">
+                    <CardContent className="p-6 text-align-center">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="p-2 rounded-lg bg-sky-400 bg-opacity-10">
                           {category.icon}

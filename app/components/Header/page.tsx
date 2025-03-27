@@ -46,16 +46,16 @@ export default function Header() {
     { href: "#experience", icon: Briefcase, label: "Experience" },
     { href: "#skills", icon: Layers, label: "Skills" },
     { href: "#education", icon: Book, label: "Education" },
-    { href: "#organizations", icon: Users, label: "Organizations" },
-    { href: "#achievements", icon: Award, label: "Achievements" },
+    // { href: "#organizations", icon: Users, label: "Organizations" },
+    // { href: "#achievements", icon: Award, label: "Achievements" },
   ]
 
   return (
     <HeaderLayout>
-      <nav className={`container mx-auto px-6 py-4 nav-blur rounded-3xl ${isFloating ? 'shadow-lg' : ''}`}>
+      <nav className={`container mx-auto px-6 py-4 nav-blur rounded-2xl ${isFloating ? 'shadow-lg' : ''}`}>
         <div className="flex items-center justify-between">
           <Link href="/" className="text-white text-xl font-bold">
-            John Doe
+            Shashank Kumar
           </Link>
           
           <div className="hidden md:flex items-center justify-center space-x-4">

@@ -6,25 +6,25 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react'
 export default function Education() {
   const educationData = [
     {
-      degree: "B.S. in Computer Science",
-      institution: "Tech University",
-      duration: "2020 - Present",
-      location: "Silicon Valley, CA",
+      degree: "B.Tech in Computer Science",
+      institution: "Lovely Professional University",
+      duration: "2022 - Present",
+      location: "Punjab, India",
       details: [
-        "GPA: 3.8/4.0",
+        "CGPA: 7.89",
         "Relevant coursework: Data Structures, Algorithms, Machine Learning",
-        "Member of the Computer Science Honor Society"
+        "COO of the E-Cell"
       ]
     },
     {
-      degree: "High School Diploma",
-      institution: "STEM Academy",
-      duration: "2016 - 2020",
-      location: "San Francisco, CA",
+      degree: "Intermediate",
+      institution: "Gurukul Vidhyapeeth",
+      duration: "2020 - 2022",
+      location: "Hajipur, Bihar",
       details: [
         "Valedictorian",
-        "President of the Coding Club",
-        "Winner of the National Math Olympiad"
+        "President of the Cricket Club",
+        "Member of the Science Club"
       ]
     }
   ]
