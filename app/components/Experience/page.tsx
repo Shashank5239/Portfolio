@@ -7,36 +7,35 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function Experience() {
   const experienceData = [
     {
-      position: "Software Engineering Intern",
-      company: "TechCorp",
-      duration: "Summer 2023",
-      location: "Remote",
+      position: "Office Assistant",
+      company: "LPU",
+      duration: "2024 - Present",
+      location: "In-Office LPU",
       responsibilities: [
-        "Developed and maintained RESTful APIs using Node.js and Express",
-        "Implemented new features for the company's main web application using React",
-        "Collaborated with the data science team to integrate machine learning models into the product"
+        "Assisted in various office tasks",
+        "Managed office supplies and inventory",
+        "Coordinated with other departments"
       ]
     },
     {
-      position: "Research Assistant",
-      company: "AI Lab, Tech University",
-      duration: "2022 - Present",
-      location: "Silicon Valley, CA",
+      position: "Event Manager",
+      company: "E-cell LPU",
+      duration: "2024 - Present",
+      location: "Lovely Professional University",
       responsibilities: [
-        "Assisted in developing novel algorithms for natural language processing",
-        "Conducted literature reviews on the latest advancements in AI and machine learning",
-        "Co-authored a paper on efficient transformer models, currently under review for publication"
+        "Organized and managed various events and workshops",
+        "Entrepreneurship and leadership development"
       ]
     },
     {
-      position: "Web Development Project Lead",
-      company: "Student Innovation Center",
-      duration: "2021 - 2022",
-      location: "Tech University",
+      position: "Management Team Member",
+      company: "UNYC LPU",
+      duration: "2023 - 2024",
+      location: "Lovely Professional University",
       responsibilities: [
-        "Led a team of 5 students in developing a campus event management platform",
-        "Implemented agile methodologies to ensure timely delivery of project milestones",
-        "Presented the final product to university administration, resulting in campus-wide adoption"
+        "Led a team of few students in developing a campus event management",
+        "Organized and managed various events and workshops",
+        "Collaborated with other teams to ensure smooth functioning of the event"
       ]
     }
   ]

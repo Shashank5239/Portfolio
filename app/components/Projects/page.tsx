@@ -13,28 +13,20 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "AI-Powered Code Assistant",
-      description: "An intelligent VS Code extension that provides contextual code suggestions and autocompletions using advanced machine learning models. Features include real-time syntax analysis, code optimization suggestions, and integration with popular frameworks.",
-      tech: ["TypeScript", "Python", "TensorFlow", "VS Code API"],
-      image: "/placeholder.svg",
-      github: "https://github.com/johndoe/ai-code-assistant",
-      live: "https://marketplace.visualstudio.com/items?itemName=example",
+      title: "HealthCareConnect",
+      description: "A web-based doctor appointment booking platform developed using HTML, CSS, JavaScript (frontend), and PHP (backend). It includes features like user authentication, doctor listings, appointment scheduling, and a responsive UI/UX for a seamless experience. Additionally, it offers a HealthCare Blog and Health Tips section, providing valuable medical insights. The PHP backend manages form submissions, session handling, and MySQL database interactions, ensuring secure and efficient performance.",
+      tech: ["HTML", "CSS", "PHP", "JavaScript"],
+      image: "/images/health.png",
+      github: "https://github.com/Shashank5239/healthcarewebsite",
+      live: "https://shashank5239.github.io/healthcarewebsite/",
     },
     {
-      title: "Blockchain Voting System",
-      description: "A decentralized e-voting platform built on Ethereum that ensures transparent and tamper-proof elections. Implements zero-knowledge proofs for voter privacy and smart contracts for automated vote tallying.",
-      tech: ["Solidity", "React", "Web3.js", "Node.js"],
-      image: "/placeholder.svg",
-      github: "https://github.com/johndoe/blockchain-voting",
-      live: "https://blockchain-voting.example.com",
-    },
-    {
-      title: "Real-time Collaboration Tool",
-      description: "A collaborative coding environment that enables multiple developers to work on the same codebase simultaneously. Features include real-time code synchronization, integrated chat, and automatic conflict resolution.",
-      tech: ["Next.js", "Socket.io", "PostgreSQL", "Docker"],
-      image: "/placeholder.svg",
-      github: "https://github.com/johndoe/collab-tool",
-      live: "https://collab.example.com",
+      title: "Potato Disease Classification",
+      description: "Developed a Potato Disease Classifier using Python, Streamlit, and CNN for a hackathon. The model identifies plant diseases from leaf images, leveraging deep learning for accurate classification. Built an intuitive Streamlit UI for user-friendly interaction. The project enhances agriculture by enabling early disease detection, aiding farmers in preventive measures.",
+      tech: ["Python", "Streamlit", "CNN"],
+      image: "/images/plant.png",
+      github: "https://github.com/Shashank5239/Potato-Disease-Classifier",
+      live: "https://github.com/Shashank5239/Potato-Disease-Classifier",
     }
   ]
 
@@ -73,7 +65,7 @@ export default function Projects() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
           >
             {projects.map((project, index) => (
               <motion.div
@@ -155,7 +147,7 @@ export default function Projects() {
               className="rounded-full border-sky-900 hover:bg-sky-900 hover:text-white transition-all duration-300"
             >
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/Shashank5239" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center"

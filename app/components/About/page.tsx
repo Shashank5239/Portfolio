@@ -10,20 +10,20 @@ export default function About() {
     {
       icon: <Code className="w-8 h-8 text-sky-400" />,
       title: "Technical Skills",
-      content: "Proficient in Python, JavaScript, and C++. Experienced with React, Node.js, and TensorFlow. Passionate about AI, machine learning, and blockchain technologies.",
-      skills: ['Python', 'JavaScript', 'C++', 'React', 'Node.js', 'TensorFlow', 'Git']
+      content: "Proficient in JavaScript, PHP, and C++. Experienced with React, Node.js, and web development. Skilled in UI/UX design and building user-friendly digital solutions.",
+      skills: ['JavaScript', 'C++',"PHP", 'React', 'HTML', 'CSS']
     },
     {
       icon: <Book className="w-8 h-8 text-sky-400" />,
       title: "Education",
-      content: "Currently pursuing a B.S. in Computer Science at Tech University. Relevant coursework: Data Structures, Algorithms, Machine Learning, and Web Development.",
-      highlight: "GPA: 3.8/4.0"
+      content: "Currently pursuing a B.S. in Computer Science at Tech University. Relevant coursework: Data Structures, Algorithms & Web Development.",
+      highlight: "CGPA: 7.89"
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-sky-400" />,
       title: "Interests & Goals",
-      content: "Fascinated by the potential of AI to solve real-world problems. Keen on developing sustainable tech solutions. Aspiring to contribute to open-source projects and mentor upcoming developers.",
-      extra: "In my free time, I enjoy participating in hackathons, reading sci-fi novels, and exploring new hiking trails."
+      content: "Passionate about web development and UI/UX design. Interested in building user-friendly digital solutions and exploring entrepreneurship. Aspiring to contribute to open-source projects and help others grow in tech.",
+      extra: "In my free time, I enjoy participating in hackathons and exploring new hiking trails."
     }
   ]
 
@@ -80,7 +80,7 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <Button asChild className="rounded-full bg-sky-900 hover:bg-sky-600 text-white p-5 animate-bounce duration-1000">
-            <a href="/path-to-your-cv.pdf" download>Download CV</a>
+            <a href="https://drive.google.com/file/d/1yNEFji0M7guwj3iACldNnq1SqWBxKCTJ/view?usp=drive_link" download>View CV</a>
           </Button>
         </motion.div>
       </div>

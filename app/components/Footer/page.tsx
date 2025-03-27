@@ -10,8 +10,8 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-wrap justify-between items-center text-white">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h3 className="text-2xl font-bold mb-4 hover:text-accent-color transition-colors">John Doe</h3>
-            <p className="text-gray-400">Event Management Professional</p>
+            <h3 className="text-2xl font-bold mb-4 hover:text-accent-color transition-colors">Shashank Kumar</h3>
+            <p className="text-gray-400">Frontend Developer & Event Management Professional</p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -24,30 +24,30 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <p className="text-gray-400">Email: john@example.com</p>
-            <p className="text-gray-400">Phone: (123) 456-7890</p>
+            <p className="text-gray-400">Email: shashankkumar2232@gmail.com</p>
+            <p className="text-gray-400">Phone: +919693444480</p>
           </div>
           <div className="w-full md:w-1/4">
             <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
-            <div className="flex space-x-8">
+            <div className="flex space-x-12">
               &nbsp;&nbsp;&nbsp;
-              <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-color transform transition duration-300 hover:scale-110">
+              <a href="https://github.com/Shashank5239" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-color transform transition duration-300 hover:scale-110">
                 <Github size={28} />
               </a>
-              <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transform transition duration-300 hover:scale-110">
+              <a href="https://www.linkedin.com/in/shashank-kumar2232/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transform transition duration-300 hover:scale-110">
                 <Linkedin size={28} />
               </a>
-              <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transform transition duration-300 hover:scale-110">
+              {/* <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transform transition duration-300 hover:scale-110">
                 <Twitter size={28} />
-              </a>
-              <a href="https://instagram.com/johndoe" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transform transition duration-300 hover:scale-110">
+              </a> */}
+              <a href="https://www.instagram.com/mr.shashank_singh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transform transition duration-300 hover:scale-110">
                 <Instagram size={28} />
               </a>
             </div>
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400">&copy; {currentYear} John Doe. All rights reserved.</p>
+          <p className="text-gray-400">&copy; {currentYear} Shashank Kumar. All rights reserved.</p>
         </div>
       </div>
     </FooterLayout>
