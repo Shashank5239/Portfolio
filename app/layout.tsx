@@ -9,8 +9,8 @@ import SocialMedia from './components/SocialMedia/page'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Portfolio template',
-  description: 'A modern portfolio for Computer Science & Engineering student',
+  title: 'Shashank Kumar',
+  description: 'Computer Science & Engineering student',
 }
 
 export default function RootLayout({
